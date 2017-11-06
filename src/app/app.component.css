@@ -1,0 +1,12 @@
+.header {
+    height: 10vh;
+}
+
+.mainContainer {
+    display: flex;
+    flex-flow: row;
+}
+
+.sideNav {
+    height: 90vh;
+}
