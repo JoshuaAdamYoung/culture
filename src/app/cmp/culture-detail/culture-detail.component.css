@@ -14,13 +14,23 @@
 
 .picId {
     grid-area: pic;
-    height: 200px;
     background: rgba(0,0,0,0.01);    
+}
+
+.image {
+    max-height: 200px;
+    background-image: '../../../assets/buch.jpg';
+    background-position: center;
 }
 
 .nameDesc {
     background: rgba(0,0,0,0.01);
     grid-area: desc;
+}
+
+.cultureName {
+    font-family: Lobster;
+    font-size: 30px;
 }
 
 .cultureInfo {

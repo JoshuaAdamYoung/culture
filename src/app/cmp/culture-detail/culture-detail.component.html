@@ -1,16 +1,22 @@
 <div class="cultureDetailGrid">
   <div class="picId">
-    <div class="image">IMAGE</div>
-    <div class="cultureId">CULTUREID</div>
+    <div class="image">
+      <img class="mainImage" src="../../../assets/buch.jpg">
+    </div>
+    <div class="cultureId">{{data.id}}</div>
   </div>
   <div class="nameDesc">
-    <div class="cultureName">CULTURENAME</div>
-    <div class="cultureDesc">CULTUREDESC</div>
+    <div class="cultureName">{{data.name}}</div>
+    <div class="cultureDesc"><p>{{data.desc}}</p></div>
   </div>
   <div class="cultureInfo">
-    <div class="cultureFam">CULTUREFAMILY</div>
-    <div class="cultureType">CULTURETYPE</div>
-    <div class="environment">ENVIRONMENTINFO</div>
+    <div class="cultureFam">{{data.family}}</div>
+    <div class="cultureType">{{data.type}}</div>
+    <div class="environment">
+      <p>Bioregion: {{data.environment.bioregion}}</p>
+      <p>Subregion: {{data.environment.subregion}}</p>
+      <p>Local environment: {{data.environment.localEnvironment}}</p>
+    </div>
   </div>
   <div class="genes">
     <div class="parentCulture">PARENTCULTURE</div>

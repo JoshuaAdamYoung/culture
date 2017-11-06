@@ -1,5 +1,6 @@
 .header {
-    height: 10vh;
+    font-family: Lobster;
+    font-size: 30px;
 }
 
 .mainContainer {
@@ -8,5 +9,7 @@
 }
 
 .sideNav {
-    height: 90vh;
+    flex: 20;
+    justify-items: center;
+    align-items: center;
 }
