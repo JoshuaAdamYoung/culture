@@ -1,0 +1,39 @@
+.cultureDetailGrid {
+    background: rgba(0,0,0,0.01);
+    display: grid;
+    width: 80vw;
+    grid-gap: 20px;
+    margin: auto;
+    grid-template-rows: minmax(100px, max-content);
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+        "pic desc info"
+        "genes genes genes"
+        "reviews reviews reviews"
+}
+
+.picId {
+    grid-area: pic;
+    height: 200px;
+    background: rgba(0,0,0,0.01);    
+}
+
+.nameDesc {
+    background: rgba(0,0,0,0.01);
+    grid-area: desc;
+}
+
+.cultureInfo {
+    background: rgba(0,0,0,0.01);
+    grid-area: info;
+}
+
+.genes {
+    background: rgba(0,0,0,0.01);
+    grid-area: genes;
+}
+
+.reviews {
+    background: rgba(0,0,0,0.01);
+    grid-area: reviews;
+}

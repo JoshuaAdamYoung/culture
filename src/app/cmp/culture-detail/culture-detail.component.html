@@ -1,3 +1,27 @@
-<p>
-  culture-detail works!
-</p>
+<div class="cultureDetailGrid">
+  <div class="picId">
+    <div class="image">IMAGE</div>
+    <div class="cultureId">CULTUREID</div>
+  </div>
+  <div class="nameDesc">
+    <div class="cultureName">CULTURENAME</div>
+    <div class="cultureDesc">CULTUREDESC</div>
+  </div>
+  <div class="cultureInfo">
+    <div class="cultureFam">CULTUREFAMILY</div>
+    <div class="cultureType">CULTURETYPE</div>
+    <div class="environment">ENVIRONMENTINFO</div>
+  </div>
+  <div class="genes">
+    <div class="parentCulture">PARENTCULTURE</div>
+    <div class="childCultures">CHILDCULTURES</div>
+  </div>
+  <div class="reviews">
+    <div class="review" *ngFor="let review of reviews">
+      <div class="user">{{review.user}}</div>
+      <div class="reviewDesc">{{review.review}}</div>
+      <div class="reviewDate">{{review.date | date}}</div>
+      <div class="reviewRating">{{review.rating}}</div>
+    </div>
+  </div>
+</div>
