@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router'
+import { RouterModule, Routes } from '@angular/router';
+
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import { AppComponent } from './app.component';
 import { UserProfileComponent } from './cmp/user-profile/user-profile.component';
@@ -10,6 +13,8 @@ import { LoginComponent } from './cmp/login/login.component';
 import { ShareComponent } from './cmp/share/share.component';
 import { LocalBrowseComponent } from './cmp/local-browse/local-browse.component';
 import { UserCulturesComponent } from './cmp/user-cultures/user-cultures.component';
+
+import { environment } from '../environments/environment'
 
 const appRoutes: Routes = [
   {
@@ -54,7 +59,10 @@ const appRoutes: Routes = [
     UserCulturesComponent
   ],
   imports: [
-    BrowserModule, RouterModule.forRoot(appRoutes)
+    BrowserModule, 
+    RouterModule.forRoot(appRoutes),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
